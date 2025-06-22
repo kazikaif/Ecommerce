@@ -1,0 +1,557 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: rgb(218, 237, 243);
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(0, 145, 189);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 4px solid black;
+}
+.img {
+  height: 100px;
+  background-color: transparent;
+  width: 150px;
+}
+.search {
+  width: 450px;
+  border-radius: 10px;
+  background-color: rgb(210, 215, 217);
+  color: white;
+  height: 25px;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  padding-left: 20px;
+  transition: transform 0.4s ease, box-shadow 0.2s ease;
+}
+.search:hover {
+  transform: scale(1.05);
+}
+::placeholder {
+  color: black;
+  opacity: 0.4;
+}
+
+.img2 {
+  padding: 0;
+  margin: 0;
+  height: 110px;
+  width: 120px;
+  background-color: transparent;
+}
+.k {
+  margin-bottom: 8px;
+  
+ }
+.btn {
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  height: 70px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  align-items: center;
+transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+   }
+.btn:hover {
+  transform: scale(1.08);
+}
+.lgn {
+  height: 45px;
+  width: 100px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgb(3, 152, 3);
+  color: white;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-bottom: 1px;
+}
+
+.lgn:hover {
+  background-color: rgb(2, 210, 2);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.img3 {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+}
+
+.category {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.fashionimg {
+  height: 130px;
+  width: 150px;
+}
+.category h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+.category div {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 0 0 15px 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  color: white;
+}
+
+.category div:hover {
+  transform: translateY(15px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-color: green;
+}
+
+.imp {
+  width: 100%;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+  padding-top: 10px;
+}
+.h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.product {
+  height: auto;
+  width: 250px;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pro {
+  height: 180px;
+  width: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.product:hover .pro {
+  transform: scale(1.05);
+}
+
+.name {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  margin: 8px 0;
+  text-align: center;
+}
+
+.price {
+  font-size: 18px;
+  color: #28a745;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.rating {
+  background-color: #ffc107;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.cart-btn,
+.fav-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.cart-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.cart-btn:hover {
+  background-color: #218838;
+}
+
+.fav-btn {
+  background-color: #ffc107;
+  color: white;
+  padding: 8px 10px;
+}
+
+.fav-btn:hover {
+  background-color: #e0a800;
+}
+.cart-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-counter button {
+  padding: 4px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+}
+.count button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.count button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.count span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+/* Login Page */
+.lg {
+  display: flex;
+  justify-content: center;
+}
+.form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 400px;
+  align-items: center;
+  border-radius: 20px;
+  background-color: white;
+   padding: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+.form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.form input {
+  height: 30px;
+  width: 250px;
+  padding: 10px;
+  background-color: rgb(193, 212, 213);
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+.form :nth-child(4) {
+  margin-bottom: 0px;
+}
+.form input::placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+.form input:hover,
+.form input:focus {
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.loginlogo {
+  height: 250px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+.sg {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  margin-top: 45px;
+}
+.link {
+  margin-right: 140px;
+  margin-top: 10px;
+}
+.create {
+  color: red;
+}
+.l {
+  height: 50px;
+  width: 120px;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff; /* Blue primary */
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.l:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+.si {
+  transition: transform 0.2s ease;
+}
+
+.si :hover {
+  transform: scale(1.05);
+}
+
+/* Sigin page*/
+.form2 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 400px;
+  align-items: center;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+.form2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.form2 input {
+  height: 30px;
+  width: 250px;
+  padding: 10px;
+  background-color: rgb(193, 212, 213);
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.form2 input::placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+.form2 input:hover,
+.form2 input:focus {
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+.sg2 {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.l2 {
+  height: 50px;
+  width: 120px;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff; /* Blue primary */
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+}
+
+.l2:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+.siginlogo {
+  height: 200px;
+  width: 200px;
+  transition: transform 0.3s ease;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+.head {
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(98, 98, 98);
+}
+.lgn2 {
+  height: 100%;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.img4 {
+  height: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  }
+.img4:hover{
+transform: scale(1.05);
+}
+.Profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.prof{
+  display: flex;
+  margin-top: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+gap: 20px;
+}
+.prof section{
+   
+  font-size: 30px;
+}
+.product .name {
+  display: -webkit-box;
+   -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5em; /* Adjust this based on your font size */
+  height: 4.5em; /* Adjust the height to match 3 lines */
+}
+   
+/* kart page*/
+.place{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kartdiv{
+  height: 100%;
+  width: 1000px;
+  margin-top: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  margin-bottom: 50px;
+
+}
+ 
+.text{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 30px;
+}
+.cart-product{
+  display: flex;
+  gap: 20px;
+}
+.cart-product img{
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  height: 150px;
+ }
+ .hom{
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+  background-color: #0056b3;
+  width: 70px;
+  border-radius: 50px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+ }
+ .hom:hover{
+  transform: scale(1.05);
+
+
+ }
+ .arr{
+  height: 50px;
+ }
